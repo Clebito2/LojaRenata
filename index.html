@@ -22,7 +22,7 @@
         5. Design Totalmente Responsivo: Perfeito em desktops, tablets e celulares.
 
         CRÉDITO:
-        desenvolvido com auxilio do Claude.
+        desenvolvido com auxilio do Gemini.
     -->
 
     <script src="https://cdn.tailwindcss.com"></script>
@@ -125,8 +125,9 @@
     <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-[#8B4513]">Guia de Lançamento</a>
-            <nav class="hidden lg:flex space-x-6">
+            <nav class="hidden lg:flex space-x-4">
                 <a href="#formalizacao" class="text-gray-700 hover:text-[#8B4513] transition-colors">Formalização</a>
+                <a href="#dropshipping" class="text-gray-700 hover:text-[#8B4513] transition-colors">Dropshipping</a>
                 <a href="#loja-virtual" class="text-gray-700 hover:text-[#8B4513] transition-colors">Loja Virtual</a>
                 <a href="#consultoria" class="text-gray-700 hover:text-[#8B4513] transition-colors">Consultoria</a>
                 <a href="#marketing" class="text-gray-700 hover:text-[#8B4513] transition-colors">Marketing</a>
@@ -140,6 +141,7 @@
         <!-- Menu Mobile -->
         <div id="mobile-menu" class="hidden lg:hidden bg-white/95 backdrop-blur-sm">
             <a href="#formalizacao" class="block py-2 px-6 text-gray-700 hover:bg-gray-100">Formalização</a>
+            <a href="#dropshipping" class="block py-2 px-6 text-gray-700 hover:bg-gray-100">Dropshipping</a>
             <a href="#loja-virtual" class="block py-2 px-6 text-gray-700 hover:bg-gray-100">Loja Virtual</a>
             <a href="#consultoria" class="block py-2 px-6 text-gray-700 hover:bg-gray-100">Consultoria</a>
             <a href="#operacional" class="block py-2 px-6 text-gray-700 hover:bg-gray-100">Operacional</a>
@@ -185,8 +187,61 @@
             </div>
         </section>
 
+        <!-- NOVA SEÇÃO: Dropshipping -->
+        <section id="dropshipping" class="py-20 md:py-32 bg-base pattern-bg">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16 reveal">
+                    <h2 class="text-4xl md:text-5xl font-bold">Entendendo o Dropshipping</h2>
+                    <p class="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">Este é o modelo de negócio que permite que você venda produtos sem precisar de um estoque físico.</p>
+                </div>
+                <div class="max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-2xl shadow-xl reveal mb-12">
+                     <h3 class="text-3xl font-bold mb-4 text-center">Como Funciona o Fluxo?</h3>
+                     <ol class="list-decimal list-inside space-y-4 text-gray-700 text-lg">
+                         <li>O cliente compra um produto na sua loja online e paga por ele.</li>
+                         <li>Você recebe o pedido e, com parte do dinheiro do cliente, compra o mesmo produto do seu fornecedor parceiro, informando o endereço do seu cliente.</li>
+                         <li>O fornecedor embala e envia o produto diretamente para a casa do seu cliente.</li>
+                         <li>Seu lucro é a diferença entre o preço que você vendeu e o preço que você pagou ao fornecedor.</li>
+                     </ol>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="bg-white p-8 rounded-2xl shadow-xl reveal">
+                        <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Dropshipping Nacional</h3>
+                        <p class="text-gray-700 mb-4">Parceria com fornecedores localizados no Brasil.</p>
+                        <h4 class="font-semibold text-lg mb-2 text-green-700">Vantagens:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                            <li>Entrega muito mais rápida (dias).</li>
+                            <li>Maior satisfação do cliente.</li>
+                            <li>Comunicação fácil em português.</li>
+                            <li>Sem taxas de importação.</li>
+                        </ul>
+                        <h4 class="font-semibold text-lg mb-2 text-red-700">Desvantagens:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>Menor variedade de produtos.</li>
+                            <li>Custo do produto pode ser maior.</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl shadow-xl reveal">
+                        <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Dropshipping Internacional</h3>
+                        <p class="text-gray-700 mb-4">Geralmente com fornecedores da China (via AliExpress).</p>
+                        <h4 class="font-semibold text-lg mb-2 text-green-700">Vantagens:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                            <li>Catálogo de produtos quase infinito.</li>
+                            <li>Preços dos produtos muito baixos.</li>
+                            <li>Acesso a tendências globais.</li>
+                        </ul>
+                        <h4 class="font-semibold text-lg mb-2 text-red-700">Desvantagens:</h4>
+                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                            <li>Entrega muito lenta (semanas ou meses).</li>
+                            <li>Risco de taxação na alfândega.</li>
+                            <li>Comunicação e devoluções complexas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- 4. Seção de Conteúdo 2 (Loja Virtual) -->
-        <section id="loja-virtual" class="py-20 md:py-32 bg-base pattern-bg">
+        <section id="loja-virtual" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Construindo sua Vitrine Digital na Nuvemshop</h2>
@@ -214,7 +269,7 @@
         </section>
         
         <!-- NOVA SEÇÃO: Consultoria -->
-        <section id="consultoria" class="py-20 md:py-32">
+        <section id="consultoria" class="py-20 md:py-32 bg-base pattern-bg">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Apoio Técnico e Estratégico</h2>
@@ -238,7 +293,7 @@
         </section>
 
         <!-- 5. Seção de Conteúdo 3 (Operacional) -->
-        <section id="operacional" class="py-20 md:py-32 bg-base pattern-bg">
+        <section id="operacional" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">A Engrenagem do Negócio</h2>
@@ -278,7 +333,7 @@
         </section>
 
         <!-- 6. Seção de Conteúdo 4 (Marketing) -->
-        <section id="marketing" class="py-20 md:py-32">
+        <section id="marketing" class="py-20 md:py-32 bg-base pattern-bg">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Conquistando Clientes</h2>
@@ -302,7 +357,7 @@
         </section>
 
         <!-- 7. Seção Ideias de Posts -->
-        <section id="ideias-posts" class="py-20 md:py-32 bg-base pattern-bg">
+        <section id="ideias-posts" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Inspiração para Posts</h2>
@@ -341,7 +396,7 @@
         </section>
 
         <!-- NOVA SEÇÃO: Inspiração de Mercado -->
-        <section id="inspiracao" class="py-20 md:py-32">
+        <section id="inspiracao" class="py-20 md:py-32 bg-base pattern-bg">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Inspiração de Mercado</h2>
@@ -363,7 +418,7 @@
         </section>
 
         <!-- 8. Seção de Afiliados -->
-        <section id="afiliados" class="py-20 md:py-32 bg-base pattern-bg">
+        <section id="afiliados" class="py-20 md:py-32">
             <div class="container mx-auto px-6">
                 <div class="text-center mb-16 reveal">
                     <h2 class="text-4xl md:text-5xl font-bold">Monetização Extra: Marketing de Afiliados</h2>
