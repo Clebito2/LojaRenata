@@ -17,20 +17,18 @@
         PRINCIPAIS FUNCIONALIDADES (FEATURES):
         1. Header Fixo e Dinâmico: Muda de aparência ao rolar a página.
         2. Animações de Scroll: Elementos surgem suavemente na tela.
-        3. Layout Elegante e Profissional: Usa a identidade visual da página de exemplo.
+        3. Layout Elegante com Moldura Floral: Usa uma identidade visual sofisticada e feminina.
         4. Conteúdo Estruturado e Detalhado: Guia passo a passo para a empreendedora.
         5. Design Totalmente Responsivo: Perfeito em desktops, tablets e celulares.
 
         CRÉDITO:
-        Criado com o auxílio do Gemini.
+        desenvolvido com auxilio do Claude.
     -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide-react@0.292.0/dist/lucide-react.js"></script>
-
 
     <style>
         /* Diretrizes de Design & Estilo */
@@ -38,7 +36,46 @@
             font-family: 'Inter', sans-serif;
             background-color: #FFFBF7; /* Tom de pêssego muito claro */
             color: #4C4A48; /* Cinza quente escuro */
+            position: relative;
         }
+
+        /* Moldura Floral */
+        body::before, body::after {
+            content: '';
+            position: fixed;
+            width: 150px; /* Tamanho da moldura */
+            height: 150px; /* Tamanho da moldura */
+            background-repeat: no-repeat;
+            z-index: 1000;
+            pointer-events: none; /* Permite clicar através da moldura */
+            opacity: 0.2;
+        }
+
+        /* Canto Superior Esquerdo */
+        body::before {
+            top: 10px;
+            left: 10px;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50,0 C50,0 20,0 20,25 C20,50 0,50 0,50" fill="none" stroke="%238B4513" stroke-width="2"/%3E%3Cpath d="M0,50 C0,50 0,20 25,20 C50,20 50,0 50,0" fill="none" stroke="%238B4513" stroke-width="2"/%3E%3Ccircle cx="30" cy="30" r="3" fill="%23D2691E"/%3E%3Ccircle cx="15" cy="40" r="2" fill="%23A0522D"/%3E%3Ccircle cx="40" cy="15" r="2" fill="%23A0522D"/%3E%3C/svg%3E');
+            background-size: 50%;
+            background-position: top left;
+        }
+
+        /* Canto Inferior Direito */
+        body::after {
+            bottom: 10px;
+            right: 10px;
+            background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cpath d="M50,100 C50,100 80,100 80,75 C80,50 100,50 100,50" fill="none" stroke="%238B4513" stroke-width="2"/%3E%3Cpath d="M100,50 C100,50 100,80 75,80 C50,80 50,100 50,100" fill="none" stroke="%238B4513" stroke-width="2"/%3E%3Ccircle cx="70" cy="70" r="3" fill="%23D2691E"/%3E%3Ccircle cx="85" cy="60" r="2" fill="%23A0522D"/%3E%3Ccircle cx="60" cy="85" r="2" fill="%23A0522D"/%3E%3C/svg%3E');
+            background-size: 50%;
+            background-position: bottom right;
+        }
+
+        @media (max-width: 768px) {
+            body::before, body::after {
+                width: 80px;
+                height: 80px;
+            }
+        }
+
 
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Playfair Display', serif;
@@ -76,7 +113,7 @@
             transform: translateY(0);
         }
 
-        /* Padrão de fundo sutil e feminino */
+        /* Padrão de fundo para seções específicas */
         .pattern-bg {
             background-image: url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%238B4513" fill-opacity="0.04"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
         }
@@ -318,7 +355,7 @@
                     </div>
                     <div class="bg-white p-8 rounded-2xl shadow-xl reveal text-center">
                         <h3 class="text-2xl font-bold text-[#8B4513] mb-4">Rosas do Céu</h3>
-                        <p class="text-gray-700 mb-4">Com foco na vestimentas católicas, a Rosas do Céu constrói uma forte comunidade em torno de seus produtos. É uma grande inspiração de como criar uma marca que vai além das roupas e se torna parte da identidade da cliente.</p>
+                        <p class="text-gray-700 mb-4">Com foco em vestimentas católicas, a Rosas do Céu constrói uma forte comunidade em torno de seus produtos. É uma grande inspiração de como criar uma marca que vai além das roupas e se torna parte da identidade da cliente.</p>
                         <a href="https://www.rosasdoceu.com.br/" target="_blank" class="font-semibold text-[#D2691E] hover:underline">Visitar o site &rarr;</a>
                     </div>
                 </div>
